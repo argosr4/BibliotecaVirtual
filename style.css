@@ -1,0 +1,202 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Banner */
+.top-banner {
+    background-color: darkgray; /* Cor de fundo amarela */
+    color:white; /* Cor do texto preta */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 1px 0; /* Espaçamento superior e inferior */
+    font-weight: 900;
+}
+
+.custom-button {
+    margin-left: 15px;
+    display: inline-block;
+    background-color: #007bff; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno (padding) */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Negrito */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222222;
+    color: #fff;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo span {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.search-bar {
+    display: absolute;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 10px;
+    border: darkblue;
+    width: 1000px;
+    height: 40px;
+
+}
+
+::placeholder{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-bar button {
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #FFD700;
+    cursor: pointer;
+}
+
+.user-cart span {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+/* Promotion Banner */
+.promotion-banner {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.promo-content h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.promo-content p {
+    margin: 5px 0 0;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+}
+
+.products h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.product-item {
+    background-color: black;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 280px;
+    height: 380px;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+}
+
+.button-container {
+    text-align: center; /* Centraliza o botão dentro da div */
+    margin-top: 20px;
+}
+
+.custom-button {
+    display: inline-block;
+    background-color: #007bff; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno (padding) */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Negrito */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.Carrosel {
+    filter: drop-shadow(0px 0px 10px black);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+.container{
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.container img{
+    margin-top: 2%;
+    width: 1000px;
+    height: 500px;
+    
+}
+
+.slide {
+    width: 200px;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0 10px;
+  }
