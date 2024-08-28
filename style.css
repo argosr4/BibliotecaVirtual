@@ -1,49 +1,47 @@
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: 400; /* or any other weight you prefer */
+    font-size: 24px; /* or any other size you prefer */
+  }
+
 /* Estilos Globais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #111;     
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
     box-sizing: border-box;
-    
+    margin: 0;
 }
 
-/* Top Banner */
-.top-banner {
-    background-color: darkgray; /* Cor de fundo amarela */
-    color:white; /* Cor do texto preta */
-    text-align: center; /* Centraliza o conteúdo */
-    padding: 1px 0; /* Espaçamento superior e inferior */
-    font-weight: 900;
-}
-
-.custom-button {
-    margin-left: 15px;
-    display: inline-block;
-    background-color: #007bff; /* Fundo azul */
-    color: #fff; /* Texto branco */
-    padding: 10px 20px; /* Espaçamento interno (padding) */
-    border-radius: 25px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-weight: bold; /* Negrito */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
 .custom-button:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
+    background-color: black; /* Cor ao passar o mouse */
 }
 /* Navbar */
-.navbar {
+nav {
+    display: flex ;
+    background-color: #111
+}
+.nav-links{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #222222;
-    color: #fff;
+    justify-content: center;
+    margin-left: 50px;
+    gap: 80px;
+    color: red;
+    font-size: larger;
+    list-style-type: none;
+    cursor: pointer;
 }
 
-.logo h1 {
-    font-size: 24px;
+.logo {
+    display: flex ;
+    height: 90px;
+    width: 60px;
+    margin-left: 50px;
 }
 
 .logo span {
@@ -51,8 +49,23 @@ body {
     color: #FFD700;
 }
 
+
+
+.series{
+    display: flex;
+  }
+.series li{
+    color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
 .search-bar {
-    display: absolute;
+    margin-left: auto;
 }
 
 .search-bar input {
@@ -71,18 +84,22 @@ body {
     padding: 5px;
     border-radius: 0 5px 5px 0;
     border: none;
-    background-color: #FFD700;
+    
     cursor: pointer;
 }
 
-.user-cart span {
+.perfil{
+    margin-left: auto;
+}
+
+.perfil span {
     font-size: 24px;
     margin-left: 20px;
 }
 
 /* Promotion Banner */
 .promotion-banner {
-    background-color: #111111;
+    
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -101,7 +118,7 @@ body {
 .products {
     text-align: center;
     padding: 20px 0;
-    background-color: #000000;
+    
     border-radius: 10px;
     margin-bottom: 0%;
 }
@@ -121,7 +138,7 @@ body {
 }
 
 .product-item {
-    background-color: black;
+    
     padding: 10px;
     width: 300px;
     height: 400px;
@@ -131,6 +148,7 @@ body {
 .product-item img {
     width: 280px;
     height: 380px;
+    gap: 30px 200px;
 }
 
 .product-item p {
@@ -157,7 +175,7 @@ body {
 
 .custom-button {
     display: inline-block;
-    background-color: #007bff; /* Fundo azul */
+    
     color: #fff; /* Texto branco */
     padding: 10px 20px; /* Espaçamento interno (padding) */
     border-radius: 25px; /* Bordas arredondadas */
@@ -167,9 +185,7 @@ body {
     transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
-.custom-button:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
-}
+
 
 .Carrosel {
     filter: drop-shadow(0px 0px 10px black);
@@ -179,7 +195,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    
   }
   
 .container{
@@ -189,13 +205,21 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 .container img{
     margin-top: 2%;
-    width: 900px;
+    width: 800px;
     height: 400px;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     
     
 }
 
@@ -214,3 +238,53 @@ body {
     border-radius: 10px;
   }
 
+  .box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    margin-left: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover input {
+    width: 400px;
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    
+}
+
+.box .fas {
+    color: #1daf;
+    font-size: 18px;
+}
+
+.box input::placeholder {
+    text-align: center;
+}
+
+.box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar .box input[type="text"] {
+    text-align: center;
+  }
+  
+  .search-bar .box input[type="text"]::placeholder {
+    text-align: center;
+  }
+
+
+  

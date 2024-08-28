@@ -14,4 +14,4 @@ function slider() {
   }
 }
 
-setInterval(slider, 2000);
+setInterval(slider, 3000);
