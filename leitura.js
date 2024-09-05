@@ -1,3 +1,4 @@
+
 // Selecionar elementos da página
 const images = document.querySelectorAll('.manga img');
 const pageNumber = document.getElementById('page-number');
@@ -54,3 +55,6 @@ window.addEventListener('scroll', () => {
     // remove the transform property, we don't need it anymore
     // header.style.transform = `translateY(${scrollPosition}px)`;
   });
+
+
+

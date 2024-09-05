@@ -154,14 +154,20 @@
     background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1;
 }
-  
+    #mode-button, #favorite-button {
+        position: relative;
+        justify-content: space-evenly;
+        margin-left: 200px;
+        
+    }
+
   
   #title {
     font-size: 24px;
@@ -208,3 +214,4 @@
   .page-container {
     position: relative;
   }
+
