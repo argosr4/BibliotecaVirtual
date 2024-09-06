@@ -8,6 +8,8 @@ const select = document.querySelector('select');
 const manga = document.querySelector('.manga');
 const selector = document.getElementById('capituloSelector');
 const imagemExibida = document.getElementById('imagemCapitulo');
+const valor = null;
+const capa = document.getElementById('capa')
 
 // Função para atualizar o número da página
 function updatePageNumber() {
@@ -118,6 +120,13 @@ function initializeCapituloSelector() {
       });
     }
   });
+}
+  
+
+if (selector === null) {
+  capa.style.display = 'block'
+} else{
+  capa.style.display = 'none'
 }
 
 // Chamar as funções de inicialização

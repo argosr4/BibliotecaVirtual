@@ -8,7 +8,8 @@
 .manga {
     text-align: center; /* centraliza o conteúdo da div */
     position: relative;
-  }
+}
+
   .manga img {
     display: block; /* Exibe como um bloco para poder ser centralizado */
     margin: 2px auto; /* Centraliza horizontalmente */
@@ -145,6 +146,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 100%;
 }
     #mode-button, #favorite-button {
         position: relative;
@@ -252,3 +254,30 @@
 .search-button:hover {
   background-color: #505050;
 }
+
+
+#capa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#capa img {
+ width: 55%;
+ height: auto;
+}
+
+/* Estilo para o efeito fade-in nas imagens */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.8s ease-in forwards; /* A duração do fade-in é de 0.8 segundos */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
